@@ -33,8 +33,8 @@ public class Main{
     else {
       System.out.println(NumberOne % NumberTwo);
     }
-    String latter = input.nextStrin();
-    while( latter == "YES"){
+    String letter = input.next();
+    while( letter.equels("YES")){
        System.out.println("Welcome Calculator");
        System.out.println("Enter first number");
        int numberF = input.nextInt();
@@ -57,8 +57,8 @@ public class Main{
         else {
           System.out.println(numberF % numberS);
         } 
-        System.out.println("Do you want another Calculation?")
-        latter = input.nextString();
+        System.out.println("Do you want another Calculation?");
+        letter = input.next();
         }
        
     
