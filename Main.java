@@ -33,12 +33,34 @@ public class Main{
     else {
       System.out.println(NumberOne % NumberTwo);
     }
-    for(){
-       NumberTwo * NumberOne;
-       NumberOne --;
-      
-    }
-    
+    String latter = input.nextStrin();
+    while( latter == "YES"){
+       System.out.println("Welcome Calculator");
+       System.out.println("Enter first number");
+       int numberF = input.nextInt();
+       System.out.println("Enter secand number");
+       int numberS = input.nextInt();
+       System.out.println("Enter the opereter");
+       char Opereter = input.next.charAt(0);
+        if (operater == '+' ){
+          System.out.println(numberF + numberS);
+        }
+        else if(operater == '-'){
+          System.out.println(numberF - numberS);
+        }
+        else if(operater == '*'){
+          System.out.println(numberF * numberS);
+        }
+        else if(operater == '/'){
+          System.out.println(numberF / numberS);
+        }
+        else {
+          System.out.println(numberF % numberS);
+        } 
+        System.out.println("Do you want another Calculation?")
+        latter = input.nextString();
+        }
+       
     
   }
 }
