@@ -1,4 +1,4 @@
- impourt java.util.Scanner;
+import java.util.Scanner;
 public class Main{
   public static void main(String[] args){
     int x = 15;
@@ -13,35 +13,22 @@ public class Main{
     System.out.println(isInRange);
 
     Scanner input  = new Scanner(System.in);
-    
-    int NumberOne = input.nextInt();
-    int NumberTwo = input.nextInt();
-    char operater = input.next().charAt(0);
-
-    if (operater == '+' ){
-      System.out.println(NumberOne + NumberTwo);
-    }
-    else if(operater == '-'){
-      System.out.println(NumberOne - NumberTwo);
-    }
-    else if(operater == '*'){
-      System.out.println(NumberOne * NumberTwo);
-    }
-    else if(operater == '/'){
-      System.out.println(NumberOne / NumberTwo);
-    }
-    else {
-      System.out.println(NumberOne % NumberTwo);
-    }
+   
+    System.out.println("Do you want to stsrt yes or no");
     String letter = input.next();
-    while( letter.equels("YES")){
+   
+    while( letter.equals.IgnoreCase("YES")){
        System.out.println("Welcome Calculator");
+     
        System.out.println("Enter first number");
        int numberF = input.nextInt();
+     
        System.out.println("Enter secand number");
        int numberS = input.nextInt();
+     
        System.out.println("Enter the opereter");
-       char Opereter = input.next.charAt(0);
+       char opereter = input.next().charAt(0);
+     
         if (operater == '+' ){
           System.out.println(numberF + numberS);
         }
@@ -57,10 +44,9 @@ public class Main{
         else {
           System.out.println(numberF % numberS);
         } 
+     
         System.out.println("Do you want another Calculation?");
         letter = input.next();
-        }
-       
-    
+    }
   }
 }
