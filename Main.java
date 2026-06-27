@@ -14,7 +14,7 @@ public class Main{
 
     Scanner input  = new Scanner(System.in);
    
-    System.out.println("Do you want to stsrt yes or no");
+    System.out.println("Do you want to stsrt? yes or no");
     String letter = input.next();
    
     while( letter.equalsIgnoreCase("YES")){
@@ -23,7 +23,7 @@ public class Main{
        System.out.println("Enter first number");
        int numberF = input.nextInt();
      
-       System.out.println("Enter secand number");
+       System.out.println("Enter second number");
        int numberS = input.nextInt();
      
        System.out.println("Enter the opereter");
