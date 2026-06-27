@@ -17,7 +17,7 @@ public class Main{
     System.out.println("Do you want to stsrt yes or no");
     String letter = input.next();
    
-    while( letter.equals.IgnoreCase("YES")){
+    while( letter.equalsIgnoreCase("YES")){
        System.out.println("Welcome Calculator");
      
        System.out.println("Enter first number");
@@ -27,7 +27,7 @@ public class Main{
        int numberS = input.nextInt();
      
        System.out.println("Enter the opereter");
-       char opereter = input.next().charAt(0);
+       char operater = input.next().charAt(0);
      
         if (operater == '+' ){
           System.out.println(numberF + numberS);
