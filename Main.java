@@ -13,19 +13,28 @@ public class Main{
     System.out.println(isInRange);
 
     Scanner input  = new Scanner(System.in);
-   
+    System.out.println("How many Calculations Do you need?");
+    int times = input.nextInt();
+    
+    int [] array = new int[times *2];
+    int index=0;
+    
     System.out.println("Do you want to stsrt? yes or no");
     String letter = input.next();
+    
    
     while( letter.equalsIgnoreCase("YES")){
        System.out.println("Welcome Calculator");
      
        System.out.println("Enter first number");
-       int numberF = input.nextInt();
+        int numberF = input.nextInt();
      
        System.out.println("Enter second number");
-       int numberS = input.nextInt();
-     
+        int numberS = input.nextInt();
+        
+        array [index++]=numberF;
+        array [index++]=numberS;
+        
        System.out.println("Enter the opereter");
        char operater = input.next().charAt(0);
      
@@ -48,5 +57,12 @@ public class Main{
         System.out.println("Do you want another Calculation?");
         letter = input.next();
     }
+    
+    System.out.println("Numbers entered");
+      for (int i = 0; i < index; i++) {
+         System.out.println(array[i]); 
+      }
+    
   }
 }
+
