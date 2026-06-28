@@ -11,9 +11,11 @@ public class Main{
     System.out.println(isGreater);
     boolean isInRange = (result > 50) && (y > 5);
     System.out.println(isInRange);
+    
+    
 
     Scanner input  = new Scanner(System.in);
-    System.out.println("How many Calculations Do you need?");
+    System.out.println("Enter the number of calculations you want to perform:");
     int times = input.nextInt();
     
     int [] array = new int[times *2];
@@ -38,20 +40,35 @@ public class Main{
        System.out.println("Enter the opereter");
        char operater = input.next().charAt(0);
      
-        if (operater == '+' ){
-          System.out.println(numberF + numberS);
-        }
-        else if(operater == '-'){
-          System.out.println(numberF - numberS);
-        }
-        else if(operater == '*'){
-          System.out.println(numberF * numberS);
-        }
-        else if(operater == '/'){
-          System.out.println(numberF / numberS);
-        }
-        else {
-          System.out.println(numberF % numberS);
+        switch (operater ){
+           case'+':
+            int sumation = sum(numberF,numberS);
+            System.out.println(sumation);
+            break;
+        
+          case'-' :
+           int subtraction= subtract(numberF,numberS);
+           System.out.println(subtraction);
+           break;
+        
+          case'*' :
+            int multiplication =multiply(numberF,numberS) ;
+            System.out.println(multiplication);
+            break;
+        
+          case'/':
+           int dividetion = divide(numberF,numberS);
+           System.out.println(dividetion);
+           break;
+          
+          case'%': 
+           int remainder= mod(numberF,numberS);
+           System.out.println(remainder);
+           break;
+          
+          default:
+           System.out.println("Invalid operater");
+           break;
         } 
      
         System.out.println("Do you want another Calculation?");
@@ -64,5 +81,25 @@ public class Main{
       }
     
   }
+  
+  public static int sum( int num1,int num2){
+      return num1+num2;
+  }
+  
+  public static int subtract( int num1,int num2){
+      return num1-num2;
+  }
+  
+  public static int multiply( int num1,int num2){
+      return num1*num2;
+  }
+  
+  public static int divide( int num1,int num2){
+      return num1/num2;
+  }
+  
+  public static int mod( int num1,int num2){
+      return num1%num2;
+  }
+  
 }
-
